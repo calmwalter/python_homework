@@ -1,0 +1,28 @@
+import turtle
+def drawRectangle(color="black",x=0,y=0,width=30,height=30):
+    turtle.color(color)
+    turtle.begin_fill()
+    turtle.penup()
+    turtle.goto((x+width/2,y+width/2))
+    turtle.pendown()
+    turtle.right(90)
+    turtle.forward(height)
+    turtle.right(90)
+    turtle.forward(width)
+    turtle.right(90)
+    turtle.forward(height)
+    turtle.right(90)
+    turtle.forward(width)
+    turtle.end_fill()
+def drawCircle(color="black",x=0,y=0,radius=50):
+    turtle.begin_fill()
+    turtle.color(color)
+    turtle.penup()
+    turtle.goto((x,y-radius))
+    turtle.pendown()
+    turtle.circle(radius)
+    turtle.end_fill()
+
+drawCircle(color="red")
+drawRectangle()
+turtle.done()
