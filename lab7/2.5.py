@@ -10,7 +10,6 @@ class displayball:
         self.height=400
         self.canvas=Canvas(self.window,width=self.width,height=self.height)
         self.canvas.pack()
-
         self.display()
 
         self.button=Button(self.window,text="display",command=self.deleteball)
